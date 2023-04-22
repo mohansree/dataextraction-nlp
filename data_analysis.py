@@ -67,7 +67,7 @@ for index, row in input.iterrows():
   article = article.translate(str.maketrans('', '', string.punctuation))
 
   #save the title and article into text files 
-  file_name = "/gdrive/MyDrive/Blackoffer-TestAssignment/TestAssignment/text_file" + str(url_id) + '.txt'
+  file_name = "/content/drive/MyDrive/intern_project/TestAssignment/TitleArticle" + str(url_id) + '.txt'
   with open(file_name, 'w') as file:
     file.write(title + '\n' + article)
 
